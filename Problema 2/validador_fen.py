@@ -33,3 +33,4 @@ if __name__ == "__main__":
         except EOFError: # Evita el error al cerrar la terminal inesperadamente
             break
     #Para usar de ejemplo: rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1  (posision inicial del tablero)
+    #Ejemplo con error en el modulo 2: rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR x KQkq - 0 1
