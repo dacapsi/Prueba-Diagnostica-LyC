@@ -1,15 +1,14 @@
 import re
 
 def analizar_expresion(cadena):
-    # Especificación de tokens basada en los requerimientos de la UNEG
     token_specification = [
         ('NUMERO',    r'\d+(\.\d+)?'),       # Enteros o reales con "."
         ('OPERADOR',  r'[\+\-\*/]'),        # + - * /
         ('PAREN_IZQ', r'\('),               # (
         ('PAREN_DER', r'\)'),               # )
-        ('OPERANDO',  r'[a-zA-Z_][a-zA-Z0-9_]*'), # No inicia con número, sin espacios[cite: 1]
+        ('OPERANDO',  r'[a-zA-Z_][a-zA-Z0-9_]*'), # No inicia con número, sin espacios
         ('SKIP',      r'\s+'),               # Ignorar espacios
-        ('ERROR',     r'.'),                 # Cualquier otro caracter[cite: 1]
+        ('ERROR',     r'.'),                 # Cualquier otro caracter
     ]
     
     tok_regex = '|'.join('(?P<%s>%s)' % pair for pair in token_specification)
@@ -31,21 +30,21 @@ def analizar_expresion(cadena):
 
     resultado = " ".join(tokens)
     
-    # Verificación de balanceo de paréntesis[cite: 1]
+    # Verificación de balanceo de paréntesis
     if parentesis == 0:
-        resultado += " PARÉNTESIS BALANCEADOS."
+        resultado += " PARENTESIS BALANCEADOS."
     else:
-        resultado += " PARÉNTESIS NO BALANCEADOS."
+        resultado += " PARENTESIS NO BALANCEADOS."
         
     return resultado
 
 # --- Bloque para interacción con el usuario ---
 if __name__ == "__main__":
-    print("--- Analizador Léxico (Prueba Diagnóstica UNEG) ---")
+    print("--- Analizador Lexico ---")
     print("Escribe 'salir' para terminar el programa.")
     
     while True:
-        entrada = input("\nIngrese la expresión a analizar: ")
+        entrada = input("\nIngrese la expresion a analizar: ")
         
         if entrada.lower() == 'salir':
             print("Saliendo del programa...")
