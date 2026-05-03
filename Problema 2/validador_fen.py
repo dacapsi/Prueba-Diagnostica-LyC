@@ -32,3 +32,4 @@ if __name__ == "__main__":
             print(ValidadorFEN.es_valido(entrada))
         except EOFError: # Evita el error al cerrar la terminal inesperadamente
             break
+    #Para usar de ejemplo: rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1  (posision inicial del tablero)

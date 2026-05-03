@@ -6,7 +6,7 @@ def analizar_expresion(cadena):
         ('OPERADOR',  r'[\+\-\*/]'),        # + - * /
         ('PAREN_IZQ', r'\('),               # (
         ('PAREN_DER', r'\)'),               # )
-        ('OPERANDO',  r'[a-zA-Z_][a-zA-Z0-9_]*'), # No inicia con número, sin espacios
+        ('OPERANDO',  r'[a-zA-Z_][a-zA-Z0-9_]*'), # No inicia con numero, sin espacios
         ('SKIP',      r'\s+'),               # Ignorar espacios
         ('ERROR',     r'.'),                 # Cualquier otro caracter
     ]
