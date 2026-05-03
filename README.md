@@ -20,4 +20,4 @@ Repositorio para la entrega de prueba diagnostica de lenguajes y compiladores
     *   `python Problema3/collatz.py`
 
 ## Defensa
-Link al video de YouTube: [TU_LINK_AQUI]
+Link al video de YouTube: [https://youtu.be/MMon5b5I-3s]
